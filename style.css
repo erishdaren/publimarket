@@ -1,13 +1,14 @@
 body{
     margin: 0%;
     padding: 0%;
+    font-family: Georgia, serif;
 }
 .navbar{
     display: flex;
     position: fixed;
     width: 100vw;
     height: 60px;
-    background-color: aqua;
+    background-color:rgba(33, 139, 192, 0.5);
     align-items: center;
 }
 .logo{
@@ -29,24 +30,33 @@ body{
 .menu a:hover{
     background: #00a2e8;
 }
-section {
-    padding-top: 60px;
-}
+
 /*slider*/
 .img-s{
-    background-image: url(imagen/html-color-codes-color-tutorials-903ea3cb.jpg);
-    background-size: cover;
+    display:  flex;
+    background-image: url(imagen/market-p.jpg);
+    background-size: cover; 
+    overflow: hidden;
+    align-items: center;
     width: 100%;
     height:500px; 
-    overflow: hidden;
+}
+.img-s nav {
+    position: absolute;
+    left: 25%;
+    color: #fff;
+}
+.img-s nav a{
+    text-decoration: none;
 }
 /*login */
 .login {
     margin: 0;
     padding: 0;
-    background-color:  #00a2e8;
+    background-image: url(imagen/338-poi-image-1.jpg);
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat; 
+    overflow: hidden;
     font-family: sans-serif;
 }
 .loginbox{
@@ -89,4 +99,116 @@ section {
 .social{
     width: 50px;
     height: 50px;
+}
+/*GRID*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 300px 300px;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    justify-items: center
+  }
+  .container-div{
+    display: grid;
+    background: rgba(40, 44, 44, 0.5);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:  repeat(2,1fr);
+    color: white;
+    text-decoration: none;
+    width: 300px;
+    height: 200px;
+    
+  }
+  .container-div div:nth-of-type(3){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  
+  }
+  
+  .item1{
+    background-image:  url(imagen/338-poi-image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  
+  .item2{
+    background-image:  url(imagen/338-poi-image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .item3{
+    background-image:  url(imagen/338-poi-image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  
+  .item4{
+    background-image:  url(imagen/338-poi-image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .item5{
+    background-image:  url(imagen/338-poi-image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .item6{
+    background-image:  url(imagen/338-poi-image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  
+  
+  .grid-container > div {
+    display: inline!important;
+    border: 2px solid grey;
+    border-radius: 5px;
+    background-color: white;
+    padding: 1em;
+    text-align: center;
+  }
+/*Footer*/
+footer{
+    display: inline-flex;
+    width: 100vw;
+    background-color: #00a2e8;
+    align-content: center;
+}
+
+.comment{
+    padding-right: 50px;
+    align-items: center;
+    position: absolute;
+    right: 0%;
+}
+.f-contact{
+    padding-left: 50px;
+
 }
