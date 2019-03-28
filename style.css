@@ -1,0 +1,92 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    background-color: aqua;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    height:50px ;
+    padding: 10px;
+}
+.menu {
+    display: flex;
+    right: 0;
+    height: 100%;
+    align-items: center;
+}
+.menu a{
+    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+.menu a:hover{
+    background: #00a2e8;
+}
+section {
+    padding-top: 60px;
+}
+/*slider*/
+.img-s{
+    background-image: url(imagen/html-color-codes-color-tutorials-903ea3cb.jpg);
+    background-size: cover;
+    width: 100%;
+    height:500px; 
+    overflow: hidden;
+}
+/*login */
+.login {
+    margin: 0;
+    padding: 0;
+    background-color:  #00a2e8;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.loginbox{
+    width: 320px;
+    height: 420px;
+    background: #D8D2CC;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.titulo-log{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.form a {
+    text-decoration: none;
+}
+.social{
+    width: 50px;
+    height: 50px;
+}
