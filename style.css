@@ -1,214 +1,45 @@
-body{
-    margin: 0%;
-    padding: 0%;
-    font-family: Georgia, serif;
-}
-.navbar{
-    display: flex;
-    position: fixed;
-    width: 100vw;
-    height: 60px;
-    background-color:rgba(33, 139, 192, 0.5);
-    align-items: center;
-}
-.logo{
-    width: 50px;
-    height:50px ;
-    padding: 10px;
-}
-.menu {
-    display: flex;
-    right: 0;
-    height: 100%;
-    align-items: center;
-}
-.menu a{
-    padding-left: 10px;
-    color: white;
-    text-decoration: none;
-}
-.menu a:hover{
-    background: #00a2e8;
-}
 
-/*slider*/
-.img-s{
-    display:  flex;
-    background-image: url(imagen/market-p.jpg);
-    background-size: cover; 
-    overflow: hidden;
-    align-items: center;
-    width: 100%;
-    height:500px; 
-}
-.img-s nav {
-    position: absolute;
-    left: 25%;
-    color: #fff;
-}
-.img-s nav a{
-    text-decoration: none;
-}
-/*login */
-.login {
-    margin: 0;
-    padding: 0;
-    background-image: url(imagen/338-poi-image-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; 
-    overflow: hidden;
-    font-family: sans-serif;
-}
-.loginbox{
-    width: 320px;
-    height: 420px;
-    background: #D8D2CC;
-    color: #fff;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-}
+P {color:rgb(0, 0, 0); 
+    font-size:20px;
+    font-family:Courier;
+    font-weight:bold;
+    font-style:italic;
+    line-height:30px;
+    letter-spacing:5px;
+    text-decoration:underline;
+    text-transform:capitalize;
+    text-align:left;
+    text-indent:30px;
+   }
+   a{
+    font-size:80px;
+    padding: 10px
+       
+   }
+ form{
+     margin:0 auto;
+     width: 60%;
+     background-color: white;
+     border-radius: 5px;
+     
+ }
+ .selector{
+     padding: 10px
+ }
+ .boton{
+     padding: 10px;
+     border-radius: 5px;
+     width: 350px;
+     text-align: center;
 
-.avatar{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
-}
-
-.titulo-log{
-    margin: 0;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 22px;
-}
-
-.loginbox p{
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-}
-.form a {
-    text-decoration: none;
-}
-.social{
-    width: 50px;
-    height: 50px;
-}
-/*GRID*/
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 300px 300px;
-    grid-column-gap: 10px;
-    grid-row-gap: 30px;
-    justify-items: center
-  }
-  .container-div{
-    display: grid;
-    background: rgba(40, 44, 44, 0.5);
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows:  repeat(2,1fr);
-    color: white;
-    text-decoration: none;
-    width: 300px;
-    height: 200px;
+ }
+.center {
+    background-color:white;
+   
+    display: block;
     
-  }
-  .container-div div:nth-of-type(3){
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  
-  }
-  
-  .item1{
-    background-image:  url(imagen/338-poi-image-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  
-  .item2{
-    background-image:  url(imagen/338-poi-image-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  .item3{
-    background-image:  url(imagen/338-poi-image-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  
-  .item4{
-    background-image:  url(imagen/338-poi-image-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  .item5{
-    background-image:  url(imagen/338-poi-image-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  .item6{
-    background-image:  url(imagen/338-poi-image-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  
-  
-  .grid-container > div {
-    display: inline!important;
-    border: 2px solid grey;
-    border-radius: 5px;
-    background-color: white;
-    padding: 1em;
-    text-align: center;
-  }
-/*Footer*/
-footer{
-    display: inline-flex;
-    width: 100vw;
-    background-color: #00a2e8;
-    align-content: center;
+}
+.center> p{
+    
 }
 
-.comment{
-    padding-right: 50px;
-    align-items: center;
-    position: absolute;
-    right: 0%;
-}
-.f-contact{
-    padding-left: 50px;
-
-}
